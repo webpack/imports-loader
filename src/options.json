@@ -56,7 +56,7 @@
     "type": {
       "enum": ["module", "commonjs"],
       "description": "Format of generated exports.",
-      "link": "https://github.com/webpack-contrib/imports-loader#type"
+      "link": "https://github.com/webpack/imports-loader#type"
     },
     "imports": {
       "anyOf": [

@@ -5,9 +5,9 @@
   "keywords": [
     "webpack"
   ],
-  "homepage": "https://github.com/webpack-contrib/imports-loader",
-  "bugs": "https://github.com/webpack-contrib/imports-loader/issues",
-  "repository": "webpack-contrib/imports-loader",
+  "homepage": "https://github.com/webpack/imports-loader",
+  "bugs": "https://github.com/webpack/imports-loader/issues",
+  "repository": "webpack/imports-loader",
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/webpack"
@@ -23,7 +23,7 @@
     "clean": "del-cli dist",
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
-    "commitlint": "commitlint --from=master",
+    "commitlint": "commitlint --from=main",
     "security": "npm audit",
     "lint:prettier": "prettier --list-different .",
     "lint:js": "eslint --cache .",

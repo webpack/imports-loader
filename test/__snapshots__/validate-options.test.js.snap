@@ -154,7 +154,7 @@ exports[`validate options should throw an error on the "type" option with "" val
  - options.type should be one of these:
    "module" | "commonjs"
    -> Format of generated exports.
-   -> Read more at https://github.com/webpack-contrib/imports-loader#type"
+   -> Read more at https://github.com/webpack/imports-loader#type"
 `;
 
 exports[`validate options should throw an error on the "type" option with "[]" value 1`] = `
@@ -162,7 +162,7 @@ exports[`validate options should throw an error on the "type" option with "[]" v
  - options.type should be one of these:
    "module" | "commonjs"
    -> Format of generated exports.
-   -> Read more at https://github.com/webpack-contrib/imports-loader#type"
+   -> Read more at https://github.com/webpack/imports-loader#type"
 `;
 
 exports[`validate options should throw an error on the "type" option with "{}" value 1`] = `
@@ -170,7 +170,7 @@ exports[`validate options should throw an error on the "type" option with "{}" v
  - options.type should be one of these:
    "module" | "commonjs"
    -> Format of generated exports.
-   -> Read more at https://github.com/webpack-contrib/imports-loader#type"
+   -> Read more at https://github.com/webpack/imports-loader#type"
 `;
 
 exports[`validate options should throw an error on the "type" option with "string" value 1`] = `
@@ -178,7 +178,7 @@ exports[`validate options should throw an error on the "type" option with "strin
  - options.type should be one of these:
    "module" | "commonjs"
    -> Format of generated exports.
-   -> Read more at https://github.com/webpack-contrib/imports-loader#type"
+   -> Read more at https://github.com/webpack/imports-loader#type"
 `;
 
 exports[`validate options should throw an error on the "unknown" option with "/test/" value 1`] = `
