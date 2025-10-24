@@ -497,7 +497,7 @@ import { lib2_method_2 as lib_2_method_2_alias } from "lib_2";
 #### `array`
 
 Allow to specify multiple imports.
-Each item can be either a [`string`](https://github.com/webpack-contrib/imports-loader#string) or an [`object`](https://github.com/webpack-contrib/imports-loader#object).
+Each item can be either a [`string`](https://github.com/webpack/imports-loader#string) or an [`object`](https://github.com/webpack/imports-loader#object).
 
 ##### Examples
 
@@ -871,10 +871,10 @@ If you’re interested in helping improve this loader, please take a moment to r
 [npm-url]: https://www.npmjs.com/package/imports-loader
 [node]: https://img.shields.io/node/v/imports-loader.svg
 [node-url]: https://nodejs.org
-[tests]: https://github.com/webpack-contrib/imports-loader/workflows/imports-loader/badge.svg
-[tests-url]: https://github.com/webpack-contrib/imports-loader/actions
-[cover]: https://codecov.io/gh/webpack-contrib/imports-loader/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack-contrib/imports-loader
+[tests]: https://github.com/webpack/imports-loader/workflows/imports-loader/badge.svg
+[tests-url]: https://github.com/webpack/imports-loader/actions
+[cover]: https://codecov.io/gh/webpack/imports-loader/branch/main/graph/badge.svg
+[cover-url]: https://codecov.io/gh/webpack/imports-loader
 [discussion]: https://img.shields.io/github/discussions/webpack/webpack
 [discussion-url]: https://github.com/webpack/webpack/discussions
 [size]: https://packagephobia.now.sh/badge?p=imports-loader
