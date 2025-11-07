@@ -861,7 +861,7 @@ const define = false; /* Disable AMD for misbehaving libraries */
 We welcome contributions!
 If you’re interested in helping improve this loader, please take a moment to read our contributing guidelines.
 
-[CONTRIBUTING](./.github/CONTRIBUTING.md)
+[CONTRIBUTING](https://github.com/webpack/imports-loader?tab=contributing-ov-file#contributing)
 
 ## License
 
