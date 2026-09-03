@@ -19,6 +19,21 @@ This is especially useful for third-party modules that rely on global variables 
 
 For further hints on compatibility issues, see the official webpack documentation on [Shimming](https://webpack.js.org/guides/shimming/).
 
+> [!CAUTION]
+>
+> This loader is deprecated. webpack shims these modules without it — see the [adding imports to a module](https://github.com/webpack/webpack/tree/main/examples/add-imports) example, which does what this loader does in a plugin small enough to keep in the configuration.
+
+## Migrating
+
+| this loader                             | webpack                                                                                                  |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `imports: "default jquery $"`           | [`ProvidePlugin`](https://webpack.js.org/plugins/provide-plugin/), which binds the name where it is read |
+| `imports: "side-effects ./polyfill"`    | a `require` prepended by the example's plugin, or a shim module `resolve.alias` points the request at    |
+| `wrapper: "window"` / `this=>window`    | the wrapper the example's plugin puts around the module                                                  |
+| `additionalCode: "var define = false;"` | `module.rules[].parser.amd: false`, or `browserify`/`commonjs` for the detection you mean to turn off    |
+
+Two notes on the migration. `ProvidePlugin` is the better answer wherever the module only **reads** a name: it binds it where the module reads it, hoisted above the body, and nothing is injected into the source. And the wrapper is for scripts only — `import`/`export` may only appear at the top level, so wrapping an ES module in a function is a syntax error, which is what this loader's `wrapper` option runs into (#39, #90); an ES module already answers `undefined` for a top-level `this`.
+
 > [!WARNING]
 >
 > By default, this loader generates ES module named syntax.
